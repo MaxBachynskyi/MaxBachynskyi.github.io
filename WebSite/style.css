@@ -1,0 +1,200 @@
+body {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: #324950;
+        margin: 0;
+        padding: 0;
+    }
+.header {
+        background: url('images/bg.jpg') center/cover no-repeat;
+        font-size: 16px;
+        color: #735440;
+        min-height: 800px;
+        position: relative;
+        width: 100%;
+        padding-top: 20px;
+    }
+/* Контейнер с поиском */
+.search-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 124px;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 20px;
+}
+.searach-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+/* Форма поиска */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Поле ввода */
+.search-input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #cccccc00;
+    border-radius: 4px;
+}
+
+/* Кнопка с иконкой */
+.search-button {
+    background: url('images/ico_search.png')center/cover no-repeat;
+    height: 18px;
+    width: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    height: 18px;
+}
+
+.search-line {
+    border: none;
+    height: 2px;
+    background-color: #324950;
+    margin-top: 2px;
+    width: 100%;
+}
+
+/* Логотип */
+.logo {
+    height: 70px;
+}
+
+.menu{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 100px;
+}
+.menu_text {
+    font-size: 20px;
+    color:#2d3e43;
+    padding: 10px;
+}
+
+/* Контент в header */
+.header-content {
+    text-align: center;
+    color: white;
+    padding: 100px 100px;
+}
+.btn{
+    border-radius: 0px;
+    padding: 10px 20px;
+}
+.brown{
+    color:#735440;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+h1{
+    font-size: 64px;    
+}
+.sign{
+    color:#57984C;
+}
+h3{
+    color:#57984C;
+}
+.line{
+    background-color:#57984C;
+    width: 200px;
+    height: 2px;
+    margin: 5px auto;
+    
+}
+.activities{
+    background-color: #EDEDED;
+    justify-content: space-around;
+    padding: 30px;
+    text-align: center;
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    font-size: 20px;
+
+}
+.navbar-nav .nav-link:hover {
+    color: #6c757d; /* Серый при наведении */
+}
+.footer {
+    background-color: #2d3e43; /* Цвет фона */
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.footernavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footernavbar .navbar-nav {
+    display: flex;
+    gap: 20px; /* Отступ между пунктами */
+}
+
+.footernavbar .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footernavbar .navbar-nav .nav-link:hover {
+    color: #6c757d; /* Серый при наведении */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Отступы между иконками */
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 24px; /* Размер иконок */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Увеличение при наведении */
+}
+
+.lower-footer {
+    background-color: #324950;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+
+}
+.img-activities{
+    width: 300px; 
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
