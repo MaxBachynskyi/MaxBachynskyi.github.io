@@ -31,6 +31,7 @@ body {
     position: relative;
     width: 100%;
     padding-top: 20px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 1);
 }
 .header_contuct_us{
     background: url('images/Contuct_us_bg.jpg') center/cover no-repeat;
@@ -406,7 +407,67 @@ h3{
 .activities_contact_us .container{
     padding: 0;
     margin: 0;
+    padding-bottom: 20px;
 }
-.activities_contact_us .container input{
-    width: 300px;
+.activities_contact_us .container label{
+    margin-top: 20px;
+}
+.activities_contact_us .container .col1 input{
+    width: 350px;
+    height: 55px;
+}
+.activities_contact_us .container .col2 input{
+    width: 635px;
+    height: 55px;
+}
+.activities_contact_us .container .col2 textarea{
+    resize: none;
+    width: 635px;
+    height: 515px;
+}
+.activities_contact_us .container select{
+    width: 635px;
+    height: 55px;
+}
+.activities_contact_us .container .check-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.activities_contact_us .container .check-code input{
+    width: 225px;
+    height: 55px;
+}
+.activities_contact_us .container .check-code button{
+    width: 255px;
+    height: 55px;
+    padding: 5px 0;
+    background-color: #57984C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+}
+.activities_contact_us .container .check-code button:hover{
+    box-shadow: 0px 6px 15px rgba(87, 152, 76, 0.9);
+}
+.activities_contact_us .container .check-code img{
+    width: auto;
+    height: 100%;
+}
+.Adress .container-fluid{
+    width: 100%;
+    background: #FFFFFF;
+    padding: 60px 0;
+    display:grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.Adress .container-fluid p{
+    padding: 0;
+    margin: 0;
+}
+.Adress .container-fluid .green-text{
+    color:#57984C
 }
