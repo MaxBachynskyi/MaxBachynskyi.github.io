@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <title>Agridera Seeds and Agriculture Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body style="background-color: #EDEDED;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <header class="header_tomato">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <form class="search-form">
+                    <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="search-button" type="submit"></button>
+                </form>
+                <hr class="search-line">
+            </div>
+        </div>
+        
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Logo.png" alt="Agridera Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Company Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Tomato_all.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">R & D</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Contuct_us.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="app">
+        <section class="activities_tomato">
+            <h2>Agridera Fresh Market Orange Hybrids</h2>
+            <p class="sign">×××××</p>
+            <p>Agridera strives to become one of the world’s leading companies in the breeding, production, and marketing of orange seed varieties. We invest heavily in research and development to deliver innovative solutions to growers and consumers across diverse global markets. In particular, we focus on developing improved cultivars with strong disease resistance and adaptability to various climates and production systems.</p>
+            <p>Currently, significant efforts are dedicated to combining resistance to Citrus Tristeza Virus (CTV), Citrus Canker (Xcc), and other soil-borne diseases into elite orange breeding lines and hybrids. In addition, comprehensive breeding programs are underway to address emerging threats such as Huanglongbing (HLB), also known as Citrus Greening.</p>
+            <p>From a horticultural perspective, breeding priorities include earliness, a range of fruit sizes, peel firmness, deep orange color, rich flavor and aroma, crack resistance, long shelf life, and reliable fruit set under both high and low temperature conditions. The goal is to combine premium quality traits with robust disease resistance across various fruit types, including both round and slightly elongated shapes.</p>
+            <p class="redline">Agridera’s orange breeding programs are focusing on three main segments: Orchard-Grown Sweet Oranges, Early-Season Maturing Varieties, and Late-Season Long Shelf-Life Varieties.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <h4>Greenhouse Orange Breeding Program</h4>
+                        <hr class="text-line">
+                        <p>This breeding is primarily aimed at high-tech greenhouse production in regions with controlled environments such as Spain and Turkey. The focus is on uniform fruit size, smooth peel texture, strong orange coloration, and high juice content. Disease resistance includes Citrus Tristeza Virus (CTV), Citrus Canker (Xcc), and Phytophthora root rot. Select hybrids may also feature tolerance to HLB (Huanglongbing) under greenhouse protection systems. </p>
+                    </div>
+                    <div class="col-12 col-md">
+                        <h4>Open-field Orchard-Grown Oranges</h4>
+                        <hr class="text-line">
+                        <p>This breeding is targeted at large-scale open-field production in Brazil, Morocco, and Turkey. The main emphasis is on sweet orange varieties with an average fruit weight of 180–250 grams, excellent flavor, and storage ability. Disease resistance focuses on CTV, Xcc, and Alternaria brown spot. Future breeding will integrate broader resistance to HLB and improve adaptability to variable climate conditions.</p>
+                    </div>
+                    <div class="col-12 col-md">
+                        <h4>Open-field Bush-Type Oranges</h4>
+                        <hr class="text-line">
+                        <p>Designed for the Mediterranean market, this program includes compact or semi-compact tree types for easier harvest and maintenance. We develop both standard round and slightly oval fruit shapes with sizes ranging from 150 to 220 grams. Basic resistance includes CTV and Citrus Canker, with some hybrids carrying additional tolerance to HLB and environmental stress factors such as drought and salinity.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="redline">Agridera operates through international and local distributers around the world.</p>
+            <div class="container text-center">
+                <div class="tom-row row g-3">
+                    <div class="col-md-4" v-for="(product, index) in products" :key="product.id || index">
+                        <a :href="'Tomato_one.html#' + product.id" style="text-decoration: none;">
+                            <img v-if="product.image" :src="'js/img/' + product.image" :alt="product.title">
+                            <h3>{{ product.title }}</h3>
+                            <p>{{ product.short_text }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <nav class="footernavbar navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">PROFILE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">MANAGEMENT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Tomato_all.html">PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">R&D</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LINKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SITEMAP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contuct_us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="images/Ico_in.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/Ico_inst.png" alt="Instagram"></a>
+                <a href="#"><img src="images/Ico_tube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/Ico_tw.png" alt="Twitter"></a>
+                <a href="#"><img src="images/Ico_fb.png" alt="Facebook"></a>
+            </div>
+        </nav>
+    </footer>
+    <footer class="lower-footer">
+        <div class="footer-text text-center mt-3">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
+    </footer>
+<script src="js/main.js"></script>     
+</body>
+</html>
+
